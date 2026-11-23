@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'aisd-vision'
+package_name = 'aisd_vision'
 
 setup(
     name=package_name,

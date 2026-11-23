@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>aisd-motion</name>
+  <name>aisd_vision</name>
   <version>0.0.0</version>
-  <description>Moves robot based on hand gestures</description>
+  <description>Uses webcam to get hand gesture data</description>
   <maintainer email="arrh0002@algonquinlive.com">aisd</maintainer>
   <license>None</license>
 
@@ -12,7 +12,13 @@
   <test_depend>ament_pep257</test_depend>
   <test_depend>python3-pytest</test_depend>
 
+  <depend>rclpy</depend>
+  <depend>image_transport</depend>
+  <depend>cv_bridge</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
   <depend>aisd_msgs</depend>
+  <depend>python3-mediapipe-pip</depend>
 
   <export>
     <build_type>ament_python</build_type>

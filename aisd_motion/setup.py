@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'aisd-motion'
+package_name = 'aisd_motion'
 
 setup(
     name=package_name,
